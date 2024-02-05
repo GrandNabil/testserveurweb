@@ -21,7 +21,7 @@ Ici le serveur mis à ma disposition est un serveur ubuntu.
 
   J'ai modifié le fichier `etc/ssh/ssh_config` pour la désactivation de la connexion par SSH et le changement de port SSH
 
-- Désactivation des ports inutilisés
+- Désactivation des ports inutilisés.
   Par défaut, les ports sont ouverts et pour une meilleure sécurité, je ferme les ports qui ne seront pas utilisés ici.
   Pour le faire, j'utilise le pare-feu UFW. UFW parce que c'est simple à utiliser et il permet de créer des règles efficaces.
   Je bloque par défaut les connexions entrantes et j'autorise les connexions sortantes
@@ -33,5 +33,7 @@ Ici le serveur mis à ma disposition est un serveur ubuntu.
 
 
 - Faire la mise à jour des paquets et vérifer qu'ils sont à jours. 
+
+### Mise en Place du Serveur Web Sécurisé
 
   
