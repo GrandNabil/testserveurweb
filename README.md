@@ -114,7 +114,7 @@ Dernière configuration de base de sécurité; j'installe ModSecurity. C' est un
   
   ![Page d'accueil du site](https://github.com/GrandNabil/testserveurweb/assets/99473954/e28bef3d-d39d-4238-8dc0-10590b101006)
 
-  Suppression du fichier temporaire "wp-config-sample.php", car il n'a plus d'intérêt, le fichier wp-config.php est maintenant définitif. On met en lecture seule le fichier "wp-config.php". Il contient les informations sensibles en rapport avec le site et la base de données.
+  Suppression du fichier temporaire "wp-config-sample.php", car il n'a plus d'intérêt, le fichier wp-config.php est maintenant définitif. On met en lecture seule le fichier "wp-config.php". Il contient les informations sensibles en rapport avec le site et la base de données. 
 
   ![Modification de sécurité](https://github.com/GrandNabil/testserveurweb/assets/99473954/037237ee-c5ad-4d1e-ab95-f971c848b7c2)
 
