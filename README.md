@@ -40,10 +40,9 @@ Ici le serveur mis à ma disposition est un serveur Ubuntu.
 
   Pour des mesures de sécurité, je vérifie la version d'Apache pour voir si c'est la dernière. La version installée est la 2.4.52 qui est la dernière.
 
-  Pour continuer avec la sécurité du serveur web, je configure HTTPS en instalant un logiciel de certificat SSL/TLS qui utilise Let's Encrypt. (certbot). Mais je n'ai pas de nom de domaine pour continuer la configuration.
-      ![Capture d’écran (186)](https://github.com/GrandNabil/testserveurweb/assets/99473954/c778a132-1f51-4156-a6ec-cdd44d807514)
-      ![image](https://github.com/GrandNabil/testserveurweb/assets/99473954/1b88a4e7-e4be-4515-8063-5f8f31817622)
-      ![Capture d’écran (187)](https://github.com/GrandNabil/testserveurweb/assets/99473954/40bd8c63-4f9f-44df-952a-c89d0a29993b)
+  Pour continuer avec la sécurité du serveur web, je configure 'a2enmod ssl' pour gérer les certificats SSL et donc l'utilisation du protocole HTTPS
+      ![ssl](https://github.com/GrandNabil/testserveurweb/assets/99473954/ee98a2ec-ce25-41c5-b152-b7df9c62637f)
+
 
   Restriction de l'accès aux fichiers du serveur en spécifiant des règles de configuration qui permettent de contrôler finement l'accès aux fichiers et répertoires sur le serveur. Ici je restreins les requêtes d'accès à '/var/www/html/restricted' et '/var/www/' il est donc impossible aux utilisateurs d'accéder aux fichiers ou répertoires à l'intérieur de ce répertoire
   
