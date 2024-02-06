@@ -11,25 +11,25 @@ Ici le serveur mis à ma disposition est un serveur ubuntu.
   
     ![modification de mot de passe](https://github.com/GrandNabil/testserveurweb/assets/99473954/b3650936-2e92-4205-8717-c2171d2a194a)
   
-- Désactivation de la connexion SSH par mot de passe & Changement du port SSH 22. Le choix du port est 11592.
+- Désactivation de la connexion SSH par mot de passe.
   Je fais cette désactivation parce que avec la connexion par mot de passe, il y a plus de risque qu'il soit découvert.
-  La connexion par clés publiques/privées a été déjà configuré  ici l'outils utilisés pour le faire est openssl.
-  Le port 22 est connu par défaut comme le port SSH, donc je le change par un autre numéro de port afin d'éviter les tentatives de connexion.
-  Installation de OpenSSH-server pour nous permettre d'utiliser le protocole SSH.
-  
-     ![désactivation et changement de port](https://github.com/GrandNabil/testserveurweb/assets/99473954/85d86fde-d988-46ec-8fbf-d5301e1dacbc)
+  La connexion par clés publiques/privées a été déjà configuré  ici; l'outil utilisé pour le faire est openssl.
 
-  J'ai modifié le fichier `etc/ssh/ssh_config` pour la désactivation de la connexion par SSH et le changement de port SSH
+  ![Désactivation de la connexion SSH par mot de passe.](https://github.com/GrandNabil/testserveurweb/assets/99473954/006617e3-c31d-49ae-a0f5-9dd5109daac3)
+
+
+  J'ai modifié le fichier `etc/ssh/sshd_config` pour la désactivation de la connexion par SSH et le changement de port SSH
 
 - Désactivation des ports inutilisés.
   Par défaut, les ports sont ouverts et pour une meilleure sécurité, je ferme les ports qui ne seront pas utilisés ici.
   Pour le faire, j'utilise le pare-feu UFW. UFW parce que c'est simple à utiliser et il permet de créer des règles efficaces.
   Je bloque par défaut les connexions entrantes et j'autorise les connexions sortantes
-  Ensuite j'autirse ssh sur le nouveau port, https, htpp, mysql pour les services web. Je m'en arrête là. S'il y'a dautres règles après elles seront ajoutées
+  Ensuite j'autoirse ssh , https, htpp pour les services web. Je m'en arrête là. S'il y'a dautres règles après elles seront ajoutées.
 
   
     ![Configuration Pare-feu)](https://github.com/GrandNabil/testserveurweb/assets/99473954/48e71a38-a59b-4159-8ae6-15930ae6ec59)
-    ![Configuration Pare-feu](https://github.com/GrandNabil/testserveurweb/assets/99473954/3e1cde96-6001-45ad-bb5f-bcc900c241be)
+    ![configuration pare feu](https://github.com/GrandNabil/testserveurweb/assets/99473954/1b95c094-0d71-4a44-8c25-81c273bd48a5)
+
 
 
 - Faire la mise à jour des paquets et vérifer qu'ils sont à jours. 
@@ -74,5 +74,23 @@ Vérification ensuite de l'installation
     ![Capture d’écran (173)](https://github.com/GrandNabil/testserveurweb/assets/99473954/1ae66a02-32be-45eb-bf3e-1bf8dae27bcc)
 
 - Configuration de Wordpress
+
   Pour accéder à Wordpress sur un navigateur j'ai utilisé l'adresse publique du serveur.
+  ![Page d'accueil de wordpress de configuration](https://github.com/GrandNabil/testserveurweb/assets/99473954/b02bdc6d-7d21-4352-874a-3bd6204d823e)
+
+
+  ![Page de bienvenue](https://github.com/GrandNabil/testserveurweb/assets/99473954/01ba89ea-e62a-422e-bb3e-db387cc32cd3)
+
+  ![Details de connexion à la base de données](https://github.com/GrandNabil/testserveurweb/assets/99473954/8b5143dc-0f4a-477f-9655-107216b13674)
+
+
+  ![Informations pour le sitess wordpress](https://github.com/GrandNabil/testserveurweb/assets/99473954/1b6fdafb-bc6a-437d-b19f-34b1675f5e8b)
+
+  ![Page de succès](https://github.com/GrandNabil/testserveurweb/assets/99473954/6f031238-402e-4b50-8648-3bc212ada66b)
+
+  ![Dashboard wordpress](https://github.com/GrandNabil/testserveurweb/assets/99473954/e86504f0-13a4-4029-a893-18862fd7a71f)
+
+  
+
+  ![modification de sécurité](https://github.com/GrandNabil/testserveurweb/assets/99473954/037237ee-c5ad-4d1e-ab95-f971c848b7c2)
 
