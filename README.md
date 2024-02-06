@@ -1,4 +1,4 @@
-![image](https://github.com/GrandNabil/testserveurweb/assets/99473954/1b88a4e7-e4be-4515-8063-5f8f31817622)# testserveurweb
+### testserveurweb
 
 ## Etape 1: Préparation et Endurcissement du Serveur
 
@@ -40,8 +40,9 @@ Ici le serveur mis à ma disposition est un serveur Ubuntu.
 
   Pour des mesures de sécurité, je vérifie la version d'Apache pour voir si c'est la dernière. La version installée est la 2.4.52 qui est la dernière.
 
-  Pour la sécurité du site web, je configure HTTPS en instalant un logiciel de certificat SSL/TLS qui utilise Let's Encrypt. (certbot). Mais je n'ai pas de nom de domaine pour continuer la configuration.
+  Pour continuer avec la sécurité du serveur web, je configure HTTPS en instalant un logiciel de certificat SSL/TLS qui utilise Let's Encrypt. (certbot). Mais je n'ai pas de nom de domaine pour continuer la configuration.
       ![Capture d’écran (186)](https://github.com/GrandNabil/testserveurweb/assets/99473954/c778a132-1f51-4156-a6ec-cdd44d807514)
+      ![image](https://github.com/GrandNabil/testserveurweb/assets/99473954/1b88a4e7-e4be-4515-8063-5f8f31817622)
       ![Capture d’écran (187)](https://github.com/GrandNabil/testserveurweb/assets/99473954/40bd8c63-4f9f-44df-952a-c89d0a29993b)
 
   Restriction de l'accès aux fichiers du serveur en spécifiant des règles de configuration qui permettent de contrôler finement l'accès aux fichiers et répertoires sur le serveur. Ici je restreins les requêtes d'accès à '/var/www/html/restricted' et '/var/www/' il est donc impossible aux utilisateurs d'accéder aux fichiers ou répertoires à l'intérieur de ce répertoire
@@ -82,7 +83,7 @@ Dernière configuration de base de sécurité; j'installe ModSecurity. C' est un
   ![base de données du site](https://github.com/GrandNabil/testserveurweb/assets/99473954/fb69b118-bff2-4ab7-ae90-1367ac033d47)
 
   Nous allons utiliser le site par défaut d'Apache "/var/www/html" pour stocker les données du site WordPress en le remplaçant par le site WordPress.
-  D'abord, je télécharge le fichier zip de WordPress. Ensuite, je décompresse avec l'outil Zip. Ensuite, je déplace le dossier WordPress vers '/var/www/html' et enfin, je donne les droits d'utilisateur au serveur Apache pour préciser que c'est le serveur web. 'sudo chown -R www-data:www-data /var/www/html/'
+  D'abord, je télécharge le fichier zip de WordPress. Ensuite, je décompresse avec l'outil Zip. Puis, je déplace le dossier WordPress vers '/var/www/html' et enfin, je donne les droits d'utilisateur au serveur Apache pour préciser que c'est le serveur web. 'sudo chown -R www-data:www-data /var/www/html/'
   Vérification ensuite de l'installation.
 
   ![Installation de WordPress](https://github.com/GrandNabil/testserveurweb/assets/99473954/cbca250a-ccfe-49f0-8a18-cc31cbcb46e8)
