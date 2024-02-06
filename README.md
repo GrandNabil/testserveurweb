@@ -6,7 +6,7 @@
 Ici le serveur mis à ma disposition est un serveur Ubuntu.
 
 ### Check-list de sécurisation du serveur
-- Modification du mot de passe root (changeme) par un mot de passe complexe (258oO#Test)
+- Modification du mot de passe root par un mot de passe complexe (258oO#Test)
   Je fais cette modification pour éviter l'utilisation non autorisée du compte super utilisateur.
   
   ![modification de mot de passe](https://github.com/GrandNabil/testserveurweb/assets/99473954/b3650936-2e92-4205-8717-c2171d2a194a)
@@ -121,3 +121,16 @@ Dernière configuration de base de sécurité; j'installe ModSecurity. C' est un
   Installation des extensions pour assurer la sécurité du site.
 
   ![Les extensions](https://github.com/GrandNabil/testserveurweb/assets/99473954/6595e953-4ff3-4d20-8ea8-7fc77486cf53)
+
+  Je suis à la fin de l'installation et du déploiement du site web Wordpress.
+  J'ai d'abord configuré la sécurité de mon serveur ubuntu en:
+  - changeant le mot de passe root;
+  - désactivant la connexion ssh au serveur par mot de passe;
+  - désactivant les ports inutilités pour ensuite autoriser uniquement les ports souhaités
+  - Faisant chaque fois la mise à jour des paquets
+    Ensuite j'ai installé le serveur LAMP. Pour le faire :
+    - J'ai installé le serveur web apache avec les configurations de sécurité à savoir: vérification de la version d'apache(mise à jour si ce n'est pas la dernière), a2enmod ssl' pour gérer les certificats SSL, restrictions des accès aux fichiers en ajoutant des règles dans le fichiers de confoguration apache.
+    - J'ai installé le moteur de script php qui est très utile surtout pour les site web wordpress
+    - J'ai installé et configurer la base de données MariaDB avec la configuration minimale de sécurité en répondant aux questions posée lors de la configuration
+    - J'ai installé et configuré Wordpress
+  Enfin j'ai déployé le site web qui est accesible depuis le serveur.
